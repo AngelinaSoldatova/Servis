@@ -1,0 +1,114 @@
+html {
+    font-family: "Jost", sans-serif;
+    background: rgb(69, 69, 69);
+    overflow: hidden;
+  }
+  
+  .container-wrapper {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 50px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .headline {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    margin-top: 0;
+  }
+  
+  .vas {
+    font-size: 24px;
+    color: rgb(131, 126, 227);
+    font-weight: bold;
+  }
+  
+  .vopros {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+  .fio {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+  .input {
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: #f5f5dc;
+    border: 2px solid black;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+  }
+  
+  .warning {
+    display: none;
+    background-color: #ee4b2b;
+    padding: 10px;
+    color: #92f4e7;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0 40px 0;
+  }
+  
+  .button {
+    font-family: "Jost", sans-serif;
+    font-size: 25px;
+    background-color: #9cc3ed;
+    padding: 5px 10px;
+    align-self: flex-start;
+  }
+  
+  .button:hover {
+    background-color: #d0f492;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .nameImageWrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .nameImageDateWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .wrapper {
+    border-bottom: 5px dotted black;
+    padding: 40px 10px 40px 0;
+  }
+  
+  .name {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .image {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .comment {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  
+  .all-comments-container {
+    overflow: auto;
+    max-height: 100vh;
+  }

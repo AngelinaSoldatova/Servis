@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оставьте комментарий</title>
+    <link rel="stylesheet" href="Сервис комментариев.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div class="container">
+        <h1 class="headline">Сервис комментариев со спам фильтром</h1>
+        <p class="vas">
+            Оставьте ваш комментарий
+            <p class="vopros">
+            Показать ваше имя?
+            Нет<input type="checkbox" id="checkbox" name="anonymous" />
+            Да<input type="checkbox" id="checkbox" name="anonymous" /></p>
+        </p>
+        <label for="name" class="fio">Введите ваше ФИО:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Иванов Иван Иванович"
+          required
+          class="input"
+        />
+        <label for="url" class="fio">Введите ссылку вашего аватара:</label>
+        <input
+          type="url"
+          id="url"
+          name="url"
+          placeholder="https://example.com"
+          pattern="https://.*"
+          required
+          class="input"
+        />
+        <label for="comment" name="comment" class="fio">Оставьте ваш комментарий:</label>
+        <textarea
+          id="comment"
+          placeholder="Напишите что-нибудь"
+          required
+          class="input">
+        </textarea>
+        <div id="warning" class="warning">Вы не ввели текст комментария!</div>
+        <button id="addComment" class="button">Отправить</button>
+      </div>
+      <div id="allComments" class="all-comments-container"></div>
+    </div>
+    <script src="Сервис комментариев.js"></script>
+  </body>
+</html>
